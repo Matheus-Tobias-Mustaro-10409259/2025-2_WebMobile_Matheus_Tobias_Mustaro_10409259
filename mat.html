@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculo</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="java.js" defer></script>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="tp">
+            <div class="nome">Sucatas</div>
+            <div class="tpbt">
+                <a href="info.html" class="bt">Informações</a>
+                <a href="index.html" class="bt">Home</a>
+            </div>
+        </div>
+        <div id="back">
+            <div class="txt">Selecione o tipo de Lixo:</div>
+            <select id="lixo" onchange="dropdown()">
+                <option value="op1">Metal</option>
+                <option value="op2">Eletrônicos</option>
+                <option value="op3">Plastíco</option>
+                <option value="op4">Papel e Papelão</option>
+            </select><br><br>
+                <div class="txt">Selecione o Material:</div>
+                <select id="material">
+                    <option value="">Selecione um tipo primeiro</option>
+            </select>
+            <br><br>
+            <div class="txt">Insira o Peso do material (kg):</div>
+            <input type="number" id="peso"><br><br>
+            <div class="cv"><button onclick="calcularValor()">Calcular Valor</button></div>
+            <br><br><br><br>
+            <div id="resultado"></div>
+        </div>
+    </body>
+</html>
